@@ -1,6 +1,7 @@
+/* Global Styles */
 body {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
+    background-color: #121212;
+    color: #f5f5f5;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
@@ -14,59 +15,79 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    color: #ff0033;
-    font-size: 48px;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px #ff0033, 0 0 20px #ff6600;
+    font-size: 36px;
+    color: #ff6666;
+}
+
+nav {
+    margin-bottom: 20px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    background-color: #222;
-    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0;
+    margin: 10px;
 }
 
 nav ul li a {
-    color: #00ffcc;
+    color: #00b4d8;
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #333;
-    color: #ff6600;
+    background-color: #00b4d8;
+    color: #121212;
 }
 
 main {
-    background-color: #333;
+    background-color: #222;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-main h2 {
-    color: #ff0033;
+main p {
+    line-height: 1.6;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     color: #888;
+    font-size: 12px;
 }
 
-footer p {
-    font-size: 12px;
+/* Home Button */
+#home-button {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#home-button a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #00b4d8;
+    border-radius: 5px;
+}
+
+#home-button a:hover {
+    background-color: #00b4d8;
+    color: #121212;
 }
